@@ -1,0 +1,625 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+  
+@font-face {
+    font-family: 'Cafe24Simplehae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+html,body{font-size: 12px;}
+h1,h2,h3,h4,h5,h6{font-size: 100%; font-family: 'Cafe24Simplehae', serif;}
+ol,ul{list-style-type: none;}
+a{color: inherit; text-decoration: none;}
+img,video{vertical-align: bottom;}
+address{font-style: normal;}
+table{border-collapse: collapse;}
+botton{border: none; background: transparent;}
+
+
+
+#wrp{width: 100%;}
+.boxalign{width: 1200px; margin: auto;}
+.boxalign2{width: 300px; float: left;}
+
+header{}
+#htop{
+    background: #fff;
+    color: #333;
+    padding: 5px 0;
+    transition: 0.5s;
+}
+#htop ul{
+    text-align: center;
+}
+#htop ul li{}
+#htop ul li a{
+    font-size: 1.5rem; 
+    line-height: 27px;
+}
+#htop ul li p{
+    display:inline;
+    color: red;
+}
+
+#htop:hover{
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+
+
+#hbot{
+    padding-top: 1rem;
+}
+#hbot::after{
+    content: '';
+    display: block;
+    clear: both;
+/*    로고와 네브를 나란히 세우기 위해서*/
+}
+
+#logo{
+    float: left;
+    margin: 0 3rem;
+}
+
+nav{
+    float: right;
+    font-family: font-family: 'Cafe24Simplehae';
+}
+nav div{
+    float: left;
+    position: relative;
+}
+nav div>a{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 0 3rem;
+    color: #777;
+}
+
+nav div>a::after{
+    content: '';
+    display: block;
+    border-bottom: 5px solid #000;
+    width: 0;
+    transition: 0.5s;
+}
+nav div:hover>a::after{
+    width: 100%;
+}
+nav div:hover>a{
+    color: #000;
+}
+nav div .sub{
+    font-family: 'MapoFlowerIsland';
+    display: none;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    color: #000;
+}
+.sub li:hover{background: #eee;}
+.sub li a{
+    display: block;
+    font-size: 1.4rem;
+    line-height: 35px;
+}
+
+main{}
+main ul{}
+main ul li{}
+main ul li img{}
+
+
+
+section{}
+
+#ccover{
+    overflow: hidden;
+    height: 750px;
+}
+.btitle{
+    text-align: center;
+    margin: 10rem 0;
+}
+.btitle .xoxo{
+    background: url(img/line_bg01.jpg) repeat-x center;
+}
+.btitle .xoxo h2{
+    font-size: 4rem;
+    line-height: 1;
+    background: #fff;
+    display: inline-block;
+    padding: 0 1rem;
+}
+.btitle p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    color: #777;
+}
+
+#banner{
+    float: left;
+    width: 75%;
+}
+#banner::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+#banner>div{
+    width: 900px;
+    float: left;
+}
+
+#banleft{
+    background: #fff;
+    transition: 0.8s;
+    position: relative;
+    left: 250px;
+    top: 250px;
+    width: 649px;
+    height: 250px;
+}
+
+/*
+.imgbox{}
+.imgbox ul{}
+.imgbox ul li{}
+.imgbox ul li img{
+    width: 600px;
+    height: 300px;
+}
+*/
+
+.textbox{
+    /* background: url(img/banner_right.png) no-repeat; */
+    /* background-size: 649px; */
+    width: 649px;
+    height: 250px;
+    /* padding-top: 15rem; */
+    box-sizing: border-box;
+    position: absolute;
+}
+.textbox>*{
+    color: #000;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-weight: normal;
+    transition: 0.8s;
+}
+.textbox h2{
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: normal;
+    margin-top: 2rem;
+}
+
+.textbox p{
+    font-size: 1.5rem;
+    margin-top: 4rem;
+}
+
+/* #banleft:hover{
+    background: #000;
+
+}
+#banleft:hover *{
+    color: #fff;
+} */
+
+
+
+
+#banbot{
+    position: relative;
+}
+#banbott ul{
+    overflow: hidden;
+}
+#banbot ul li{
+    width: 250px;
+/*    border: 1px dashed #aaa;*/
+    float: left;
+    box-sizing: border-box;
+    background: #000;
+}
+.ban2{
+    position: absolute;
+}
+.new{
+    position: absolute;
+    top: 250px;
+
+}
+.ban3{
+    position: absolute;
+    top: 500px;
+
+}
+#banbot ul li a{
+    
+    width: 250px;
+    height: 250px;
+    display: block;
+    position: relative;
+    
+/*
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: url(img/banner2.png);
+    background-size: cover;
+    position: relative;
+    transition: 0.5s;
+*/
+}
+#banbot ul li a img{
+    width: 100%;
+    position: absolute;
+    transition: 0.7s;
+}
+#banbot ul li a img:nth-child(2){
+    opacity: 0;
+}
+
+#banbot ul li:hover img:nth-child(1){
+    opacity: 0.7;
+}
+#banbot ul li:hover img:nth-child(2){
+    opacity: 1;
+}
+
+#banbot ul li a span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 0;
+    color: #fff;
+    font-family: 'LotteMartHappy';
+    letter-spacing: 0;
+    transition: 0.7s;
+}
+#banbot ul li a:hover span{
+    font-size: 3rem;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+
+
+#magazine{
+    width: 25%;
+    float: right;
+    
+}
+#magazine ul{
+    overflow: hidden;
+}
+#magazine li{
+    width: 100%;
+    height: 750px;
+}
+#magazine li a{
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    display: block;
+}
+#magazine li a img{
+    width: 80%;
+/*    margin: 5rem 3rem;*/
+    margin: 10%;
+    
+}
+#magazine li a h4{
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin: 4.5rem 2rem 0;
+    padding: 1rem;
+    font-family: 'LotteMartHappy';
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+#magazine li a p{
+    font-size: 1.3rem;
+    letter-spacing: -2.5px;
+    line-height: 1.4;
+}
+
+.m1{
+background: url(img/m1bg.jpg);
+}
+.m1 a{
+}
+.m1 a img{
+}
+.m1 a h4{}
+.m1 a p{
+    margin: 3rem 2rem;
+}
+
+.m2{
+    background: url(img/m2bg.jpg);
+}
+.m2 a{
+}
+.m2 a img{
+}
+.m2 a p{
+    margin: 2rem 2rem;
+}
+
+#event{
+    margin-top: 5rem;
+}
+
+.etitle{
+    text-align: center;
+    margin: 10rem 0;
+}
+.etitle .xoxo{
+    background: url(img/line_bg01.jpg) repeat-x center;
+}
+.etitle .xoxo h2{
+    font-size: 4rem;
+    line-height: 1;
+    background: #fff;
+    display: inline-block;
+    padding: 0 1rem;
+}
+.etitle p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    color: #777;
+}
+
+
+.elist{
+    margin: 4rem 0;
+}
+.elist ul{
+    overflow: hidden;
+}
+.elist ul li{
+    float: left;
+    width: 240px;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.elist li+li{
+    margin-left: 66px;
+}
+.elist li:nth-child(2n){
+    margin-top: 3rem;
+}
+.elist li:hover{
+    border-color: #7b4283;
+}
+.elist ul li a{
+    display: block;
+}
+.elist ul li img{
+    width: 100%;
+}
+.elist ul li span{
+    display: block;
+}
+
+.etext1{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    letter-spacing: -1.5px;
+}
+.etext2{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #555;
+    margin: 2rem 0 1.5rem;
+    letter-spacing: -2px;
+}
+.elist li:hover .etext3{
+    color: #7b4283;
+}
+
+.emore{
+    text-align: center;
+}
+.emore a{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: 2px solid #7b4283;
+    transition: 0.5s;
+    background: #fff;
+    color: #7b4283;
+}
+.emore a:hover{
+    background: #7b4283;
+    color: #fff;
+}
+
+
+
+#box{
+    background: #eee;
+    margin-top: 15rem;
+    overflow: hidden;
+    padding: 3rem 0;
+}
+
+.bbox{   
+    width: 550px;
+    padding: 2rem 5rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+.bbox h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.bbox h4{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.bbox a{
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.bbleft{
+    float: left;
+    background: url(img/instar.png) no-repeat #c7739f  400px;
+    border: 2px solid ;
+}
+.bbright{
+    float: right;
+    background: url(img/kakao.png) no-repeat #e8d535  400px;
+    border: 2px solid  ;
+}
+
+
+#grey{}
+
+
+
+
+footer{}
+
+
+
+#gray{
+    background: #333;
+    color: #ddd;
+    overflow: hidden;
+    padding: 4rem 0;
+}
+#gray dl{
+    float: left;
+    width: 160px;
+}
+#gray dl+dl{
+    margin-left: 12px;
+/*
+    L.boxalign 1020px - dl 160px * 6
+      = 60px / 여백이들어갈 공간 5
+*/
+}
+#gray dl dt{
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid #999;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+#gray dl dd{
+    padding-left: 1rem;
+    
+}
+#gray dl dd a{
+    display: block;
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+#gray dl dd:hover a{
+    color: #fff;
+}
+    
+
+
+
+footer{
+    background: #111;
+    color: #bbb;
+    padding: 2rem 0;
+}
+
+#ftop{
+    border-bottom: 1px solid #999;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+#ftop ul{
+    overflow: hidden;
+}
+#ftop ul li{
+    float: left;
+    font-size: 1.2rem;
+}
+#ftop ul li a{}
+#ftop ul li span{
+    margin: 1rem;
+}
+
+
+#fbot{
+    overflow: hidden;
+}
+#fbot .flogo{
+    float: left;
+    /* margin-right: 1rem; */
+}
+#fbot .flogo h1{
+    font-size: 3rem;
+    margin-top: 12px;
+}
+#fbot .nextflogo{
+    overflow: hidden;
+}
+.nextflogo span{
+    height: 50px;
+    border-left: 2px solid #999;
+    margin: 0 2rem;
+}
+.nextflogo h5{
+    font-size: 2.5rem;
+    display: inline-block;
+}
+.nextflogo h3{
+    font-size: 4rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.nextflogo p{
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    letter-spacing: -1.5px;
+}
+
+#fbot address{
+    float: left;
+    color: #999;
+}
+#fbot select{
+    float: right;
+    width: 150px;
+    height: 30px;
+    background: #333;
+    border: none;
+    color: #eee;
+    border-radius: 20px;
+    padding-left: 3rem;
+}
